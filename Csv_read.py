@@ -2,7 +2,7 @@
 # coding: utf-8
 
 import pandas as pd
-df = pd.read_csv('new.csv', encoding = 'cp1251', delimiter=';')
+df = pd.read_csv('new.csv', encoding = 'cp1251', delimiter=';', index_col=False)
 
 brands = df['Бренд'].unique()
 
